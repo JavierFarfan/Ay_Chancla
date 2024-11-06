@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Suelo
+  - Corazon
+  - Obstaculo_NoJump
+  - Obstaculo_Jump
+  - Bici
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Carril 1
+  - Carril 2
+  - Carril 3
+  - Carril 4
+  - 'Carril 5 '
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Carril 1
+    uniqueID: 4286622197
+    locked: 0
+  - name: Carril 2
+    uniqueID: 967359755
+    locked: 0
+  - name: Carril 3
+    uniqueID: 2991023457
+    locked: 0
+  - name: Carril 4
+    uniqueID: 717291909
+    locked: 0
