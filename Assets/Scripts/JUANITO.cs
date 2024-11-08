@@ -168,14 +168,73 @@ public class JUANITO : MonoBehaviour
         {
 
             GameManager.Instance.PerderGame();
-            if (collision.gameObject.name == "valla")
-            {
-                AudioManager.Instance.PlaySfx("valla");
-            }
+            //Sonidos SFX Stage 1
             if (collision.gameObject.name == "auto")
             {
                 AudioManager.Instance.PlaySfx("auto");
             }
+
+            if (collision.gameObject.name == "valla")
+            {
+                AudioManager.Instance.PlaySfx("valla");
+            }
+
+            //Sonidos SFX Stage 2
+            if (collision.gameObject.name == "arena")
+            {
+                AudioManager.Instance.PlaySfx("arena");
+            }
+            if (collision.gameObject.name == "camion")
+            {
+                AudioManager.Instance.PlaySfx("camionImpacto");
+            }
+            if (collision.gameObject.name == "vigas")
+            {
+                AudioManager.Instance.PlaySfx("vigas");
+            }
+            if (collision.gameObject.name == "alcantarilla")
+            {
+                AudioManager.Instance.PlaySfx("charco");
+                AudioManager.Instance.PlaySfx("casco");
+            }
+
+            //Sonidos SFX Stage 3
+
+            if (collision.gameObject.name == "banca")
+            {
+                AudioManager.Instance.PlaySfx("bancoParque");
+            }
+            if (collision.gameObject.name == "camionHelado")
+            {
+                AudioManager.Instance.PlaySfx("auto");
+                AudioManager.Instance.PlaySfx("caca");
+            }
+            if (collision.gameObject.name == "camionDonas")
+            {
+                AudioManager.Instance.PlaySfx("auto");
+                AudioManager.Instance.PlaySfx("caca");
+            }
+            if (collision.gameObject.name == "tacho")
+            {
+                AudioManager.Instance.PlaySfx("casco");
+            }
+            if (collision.gameObject.name == "abuela")
+            {
+                Debug.Log("Agregar sonido de abuela");
+                //AudioManager.Instance.PlaySfx("");
+            }
+            if (collision.gameObject.name == "abuela2")
+            {
+                Debug.Log("Agregar sonido de abuela 2");
+                //AudioManager.Instance.PlaySfx("");
+            }
+            if (collision.gameObject.name == "abuela3")
+            {
+                Debug.Log("Agregar sonido de abuela 3");
+                //AudioManager.Instance.PlaySfx("");
+            }
+            
+
         }
 
 

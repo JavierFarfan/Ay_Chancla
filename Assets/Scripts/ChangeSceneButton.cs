@@ -2,59 +2,63 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
+//using UnityEditor.SearchService;
 
 public class ChangeSceneButton : MonoBehaviour
 {
     public static ChangeSceneButton Instance;
 
-    
-    public void ChangeScene(string sceneName)
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    public void ChangeScene(int sceneIndex)
     {
         AudioManager.Instance.musicSource.Stop();
         AudioManager.Instance.sfxSource.Stop();
-        SceneManager.LoadScene(sceneName);
+        SceneManager.LoadScene(sceneIndex);
 
-        /*if (sceneName == "S1L1")
-         {            
-             AudioManager.Instance.PlayMusic("Stage1");
-             AudioManager.Instance.PlaySfx("JuanitoStart");
-             AudioManager.Instance.PlaySfx("MariaStart");
-
-         }
-         else if (sceneName == "Home")
-         {
-             AudioManager.Instance.PlayMusic("tittle");
-         }*/
-
-        switch (sceneName)
+        switch (sceneIndex)
         {
-            case "Home":
+            case 0:
                 AudioManager.Instance.PlayMusic("tittle");
                 
                 break;
-            case "S1L1":
+            case 1:
+            case 2:
+            case 3:
+            case 4:
                 AudioManager.Instance.PlayMusic("Stage1");
+                AudioManager.Instance.PlaySfx("JuanitoStart");
+                AudioManager.Instance.PlaySfx("MariaStart");
+                break;
+            case 5:
+            case 6:
+            case 7:
+            case 8:
+                AudioManager.Instance.PlayMusic("Stage2");
+                AudioManager.Instance.PlaySfx("JuanitoStart");
+                AudioManager.Instance.PlaySfx("MariaStart");
+                break;
+            case 9:
+            case 10:
+            case 11:
+            case 12:
+                AudioManager.Instance.PlayMusic("Stage3");
                 AudioManager.Instance.PlaySfx("JuanitoStart");
                 AudioManager.Instance.PlaySfx("MariaStart");
                 break;
 
-            case "S1L2":
-                AudioManager.Instance.PlayMusic("Stage1");
-                AudioManager.Instance.PlaySfx("JuanitoStart");
-                AudioManager.Instance.PlaySfx("MariaStart");
-                break;
-            case "S1L3":
-                AudioManager.Instance.PlayMusic("Stage1");
-                AudioManager.Instance.PlaySfx("JuanitoStart");
-                AudioManager.Instance.PlaySfx("MariaStart");
-                break;
-            case "S1L4":
-                AudioManager.Instance.PlayMusic("Stage1");
-                AudioManager.Instance.PlaySfx("JuanitoStart");
-                AudioManager.Instance.PlaySfx("MariaStart");
-                break;
 
-            
 
         }        
     }

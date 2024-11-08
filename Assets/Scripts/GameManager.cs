@@ -29,19 +29,26 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        Screen.sleepTimeout = SleepTimeout.NeverSleep;
     }
     private void Start()
     {
         Time.timeScale = 1.0f;
+        Application.targetFrameRate = 60;
     }
 
     public void PerderVida()
     {
-        if (vidas > 0)
+        if (vidas > 1)
         {
             vidas -= 1;
             hud.DesactivarVida(vidas);
-        }   
+        }
+        else
+        {
+            PerderGame();
+        }
     }
 
     public void RecuperarVida()
@@ -53,18 +60,19 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if(vidas == 0)
+        /*if(vidas == 0)
         {
-            PerderGame();
-        }
+            
+        }*/
     }
     public void PauseGame()
     {
+        AudioManager.Instance.PlaySfx("sfxUISelect");
         Time.timeScale = 0f;
     }
     public void ResumeGame()
     {
-
+        AudioManager.Instance.PlaySfx("sfxUISelect");
         Time.timeScale = 1f;
     }
     public void NextGame()
@@ -74,7 +82,7 @@ public class GameManager : MonoBehaviour
 
         if (currentIndexScene + 1 < totalScenes)
         {
-            SceneManager.LoadScene(currentIndexScene + 1);
+            ChangeSceneButton.Instance.ChangeScene(currentIndexScene + 1);
         }
         else
         {
@@ -87,7 +95,9 @@ public class GameManager : MonoBehaviour
     {
         RestoreLife();
         Time.timeScale = 1f;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
+        int sceneIndex = SceneManager.GetActiveScene().buildIndex;
+        ChangeSceneButton.Instance.ChangeScene(sceneIndex);
 
        /* if (hudController != null)
         {
@@ -104,24 +114,41 @@ public class GameManager : MonoBehaviour
     }
     public void PerderGame()
     {
+        AudioManager.Instance.PlaySfx("JuanitoGameOver");
+        AudioManager.Instance.PlaySfx("StingerLose");
+
         AudioManager.Instance.musicSource.Stop();
-        AudioManager.Instance.sfxSource.Stop();
         //SceneManager.LoadScene("LoseScene");
         Time.timeScale = 0f;
         panelHud.SetActive(false);
         panelLose.SetActive(true);
-        AudioManager.Instance.PlaySfx("JuanitoGameOver"); 
+       
         
     }
     public void GanarGame()
     {
+        AudioManager.Instance.PlaySfx("JuanitoVictory");
+        AudioManager.Instance.PlaySfx("MariaEnd");
+        AudioManager.Instance.PlaySfx("StingerWin");
         AudioManager.Instance.musicSource.Stop();
-        AudioManager.Instance.sfxSource.Stop();
         //SceneManager.LoadScene("WinScene");
         Time.timeScale = 0f;
         panelHud.SetActive(false);
         panelWin.SetActive(true);
-        AudioManager.Instance.PlaySfx("JuanitoVictory");
-        AudioManager.Instance.PlaySfx("MariaEnd");
+
     }
+
+    public void ReproducirSonidoBack()
+    {
+        AudioManager.Instance.PlaySfx("sfxUIBack");
+    }
+    public void ReproducirSonidoSelect()
+    {
+        AudioManager.Instance.PlaySfx("sfxUISelect");
+    }
+    public void ReproducirSonidoChancletazo()
+    {
+        AudioManager.Instance.PlaySfx("sfxUIChancletazo");
+    }
+
 }

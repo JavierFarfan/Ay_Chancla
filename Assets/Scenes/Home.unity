@@ -230,6 +230,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 108584589}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: ReproducirSonidoChancletazo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &58557426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -725,6 +737,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 108584589}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: ReproducirSonidoSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &196060329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1010,6 +1034,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 108584589}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: ReproducirSonidoSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &293288958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1255,13 +1291,25 @@ MonoBehaviour:
       - m_Target: {fileID: 108584587}
         m_TargetAssemblyTypeName: ChangeSceneButton, Assembly-CSharp
         m_MethodName: ChangeScene
-        m_Mode: 5
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: S1L4
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 108584589}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: ReproducirSonidoSelect
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: S1L4
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &353737930
@@ -2038,13 +2086,25 @@ MonoBehaviour:
       - m_Target: {fileID: 108584587}
         m_TargetAssemblyTypeName: ChangeSceneButton, Assembly-CSharp
         m_MethodName: ChangeScene
-        m_Mode: 5
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: S2L1
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 108584589}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: ReproducirSonidoSelect
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: S2L1
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &599473024
@@ -2366,6 +2426,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 108584589}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: ReproducirSonidoSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &664712108
 MonoBehaviour:
@@ -2763,13 +2835,25 @@ MonoBehaviour:
       - m_Target: {fileID: 108584587}
         m_TargetAssemblyTypeName: ChangeSceneButton, Assembly-CSharp
         m_MethodName: ChangeScene
-        m_Mode: 5
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 12
+          m_FloatArgument: 0
+          m_StringArgument: S3L4
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 108584589}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: ReproducirSonidoSelect
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: S3L4
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &729115693
@@ -2896,13 +2980,25 @@ MonoBehaviour:
       - m_Target: {fileID: 108584587}
         m_TargetAssemblyTypeName: ChangeSceneButton, Assembly-CSharp
         m_MethodName: ChangeScene
-        m_Mode: 5
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 9
+          m_FloatArgument: 0
+          m_StringArgument: S3L1
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 108584589}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: ReproducirSonidoSelect
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: S3L1
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &755493764
@@ -3112,13 +3208,25 @@ MonoBehaviour:
       - m_Target: {fileID: 108584587}
         m_TargetAssemblyTypeName: ChangeSceneButton, Assembly-CSharp
         m_MethodName: ChangeScene
-        m_Mode: 5
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: S1L2
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 108584589}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: ReproducirSonidoSelect
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: S1L2
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &782316850
@@ -3252,6 +3360,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: S1L1
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 108584587}
+        m_TargetAssemblyTypeName: ChangeSceneButton, Assembly-CSharp
+        m_MethodName: ChangeScene
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &821228480
@@ -3535,13 +3655,25 @@ MonoBehaviour:
       - m_Target: {fileID: 108584587}
         m_TargetAssemblyTypeName: ChangeSceneButton, Assembly-CSharp
         m_MethodName: ChangeScene
-        m_Mode: 5
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Home
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 108584589}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: ReproducirSonidoBack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &843765613
@@ -4021,7 +4153,11 @@ MonoBehaviour:
   - name: tittle
     clip: {fileID: 8300000, guid: 8f20b2233cb804f4e99c3fcf5a6b29fc, type: 3}
   - name: Stage1
-    clip: {fileID: 8300000, guid: e250a5cdef1aad04dab798d45f67b5b4, type: 3}
+    clip: {fileID: 8300000, guid: 3e9208b92c8369d48a1ee54b207c79b3, type: 3}
+  - name: Stage2
+    clip: {fileID: 8300000, guid: bb8c3557aa6dbcf4bb9d2f472079340c, type: 3}
+  - name: Stage3
+    clip: {fileID: 8300000, guid: b8bdff4bd5bacaa4b9b6cf126c828c25, type: 3}
   sfxSounds:
   - name: JuanitoGameOver
     clip: {fileID: 8300000, guid: 26963f9e20e214e49bc827d2efdac0bd, type: 3}
@@ -4031,16 +4167,58 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 5e2054d8388e08c40b3ee9934c4e90fa, type: 3}
   - name: MariaEnd
     clip: {fileID: 8300000, guid: 592047b3d2fc4f84d9011c7ec577353d, type: 3}
+  - name: StingerLose
+    clip: {fileID: 8300000, guid: 1755a0d23e85c834b897a80ea606eeb9, type: 3}
+  - name: StingerWin
+    clip: {fileID: 8300000, guid: 95c086500f7217244b5c791ef3c67d47, type: 3}
   - name: MariaStart
     clip: {fileID: 8300000, guid: 4928deb6f4c15aa4a88e56d5830787e7, type: 3}
   - name: auto
-    clip: {fileID: 8300000, guid: e1dadb83dc5dbaf49b3fba44fc9e403e, type: 3}
+    clip: {fileID: 8300000, guid: dc93721fce095f04ba87a8e646e0a33d, type: 3}
+  - name: perro ladra
+    clip: {fileID: 8300000, guid: bb01d4611227345409e71e8834e86d8d, type: 3}
   - name: caca
-    clip: {fileID: 8300000, guid: 5bbecf27944b42f4ba1633046ee0b14e, type: 3}
+    clip: {fileID: 8300000, guid: 87105b5812a25d540bf954b386a7381f, type: 3}
   - name: charco
-    clip: {fileID: 8300000, guid: 96c795cbad10d7c46bbe7f2e5e260fc5, type: 3}
+    clip: {fileID: 8300000, guid: 4a5669ed61968ec498a10d2566e762b1, type: 3}
   - name: valla
-    clip: {fileID: 8300000, guid: 2b422631ca9e23e49b9edfb4662f471f, type: 3}
+    clip: {fileID: 8300000, guid: ddaca08643ea48b46b36baa5d2729af4, type: 3}
+  - name: arena
+    clip: {fileID: 8300000, guid: 5d47945ecde799e4a8882de61f2e4cf2, type: 3}
+  - name: vigas
+    clip: {fileID: 8300000, guid: b5e504ad3ed5561499bbaea2b30b531e, type: 3}
+  - name: camionImpacto
+    clip: {fileID: 8300000, guid: 17b50f009aa65d14a92208602571d719, type: 3}
+  - name: carretilla
+    clip: {fileID: 8300000, guid: dc93721fce095f04ba87a8e646e0a33d, type: 3}
+  - name: casco
+    clip: {fileID: 8300000, guid: 3a5f91150e7c7c842b3e504c56250e3d, type: 3}
+  - name: perro duerme
+    clip: {fileID: 8300000, guid: 720d1e46a503dd146939b9b734577fd0, type: 3}
+  - name: bicicleta
+    clip: {fileID: 8300000, guid: 7fe0717ff47ccf24987ec1c570d522ef, type: 3}
+  - name: camionMove
+    clip: {fileID: 8300000, guid: 2a5901e69ae39554984ee28229beb5ea, type: 3}
+  - name: bancoParque
+    clip: {fileID: 8300000, guid: 74161b6d3d20e694195a57a1ebe12b19, type: 3}
+  - name: bicicleta
+    clip: {fileID: 8300000, guid: 7fe0717ff47ccf24987ec1c570d522ef, type: 3}
+  - name: sfxUIChancletazo
+    clip: {fileID: 8300000, guid: 2f5439082f700b7469458625b76260fd, type: 3}
+  - name: sfxUIBack
+    clip: {fileID: 8300000, guid: 6eaa1dda958b8f545bbd783a8ebe8b9b, type: 3}
+  - name: sfxUISelect
+    clip: {fileID: 8300000, guid: f01ce7e71714aa147957f695c4c694ad, type: 3}
+  - name: NPC1
+    clip: {fileID: 8300000, guid: fe052860fcd012d44b6e8542e30dc91c, type: 3}
+  - name: NPC2
+    clip: {fileID: 8300000, guid: f2955c3fc322a0d41ac10d9ebba9494c, type: 3}
+  - name: NPC3
+    clip: {fileID: 8300000, guid: fbdeac6b8ebb37744a9176d86cc3266c, type: 3}
+  - name: NPC4
+    clip: {fileID: 8300000, guid: eb015398b2ccacf46994d4d3f53f80eb, type: 3}
+  - name: NPC5
+    clip: {fileID: 8300000, guid: 2729b223d99c0b04eaea43be3ac35118, type: 3}
   musicSource: {fileID: 1716585852}
   sfxSource: {fileID: 1615834894}
 --- !u!4 &1044542110
@@ -4159,6 +4337,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 108584589}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: ReproducirSonidoBack
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4312,6 +4502,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 108584589}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: ReproducirSonidoChancletazo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1100196635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4436,13 +4638,25 @@ MonoBehaviour:
       - m_Target: {fileID: 108584587}
         m_TargetAssemblyTypeName: ChangeSceneButton, Assembly-CSharp
         m_MethodName: ChangeScene
-        m_Mode: 5
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 8
+          m_FloatArgument: 0
+          m_StringArgument: S2L4
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 108584589}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: ReproducirSonidoSelect
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: S2L4
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1204820804
@@ -4606,13 +4820,25 @@ MonoBehaviour:
       - m_Target: {fileID: 108584587}
         m_TargetAssemblyTypeName: ChangeSceneButton, Assembly-CSharp
         m_MethodName: ChangeScene
-        m_Mode: 5
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 11
+          m_FloatArgument: 0
+          m_StringArgument: S3L3
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 108584589}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: ReproducirSonidoSelect
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: S3L3
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1266893511
@@ -4830,6 +5056,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 108584589}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: ReproducirSonidoBack
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5219,13 +5457,25 @@ MonoBehaviour:
       - m_Target: {fileID: 108584587}
         m_TargetAssemblyTypeName: ChangeSceneButton, Assembly-CSharp
         m_MethodName: ChangeScene
-        m_Mode: 5
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Home
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 108584589}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: ReproducirSonidoBack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1343844310
@@ -5632,13 +5882,25 @@ MonoBehaviour:
       - m_Target: {fileID: 108584587}
         m_TargetAssemblyTypeName: ChangeSceneButton, Assembly-CSharp
         m_MethodName: ChangeScene
-        m_Mode: 5
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: S1L3
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 108584589}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: ReproducirSonidoSelect
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: S1L3
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1433186483
@@ -5765,13 +6027,25 @@ MonoBehaviour:
       - m_Target: {fileID: 108584587}
         m_TargetAssemblyTypeName: ChangeSceneButton, Assembly-CSharp
         m_MethodName: ChangeScene
-        m_Mode: 5
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 7
+          m_FloatArgument: 0
+          m_StringArgument: S2L3
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 108584589}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: ReproducirSonidoSelect
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: S2L3
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1436134364
@@ -5905,6 +6179,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: S1L1
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 108584589}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: ReproducirSonidoSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1449649883
@@ -7073,6 +7359,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 108584589}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: ReproducirSonidoBack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1673991278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7217,6 +7515,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 108584589}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: ReproducirSonidoSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1674866526
 MonoBehaviour:
@@ -7425,13 +7735,25 @@ MonoBehaviour:
       - m_Target: {fileID: 108584587}
         m_TargetAssemblyTypeName: ChangeSceneButton, Assembly-CSharp
         m_MethodName: ChangeScene
-        m_Mode: 5
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 6
+          m_FloatArgument: 0
+          m_StringArgument: S2L2
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 108584589}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: ReproducirSonidoSelect
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: S2L2
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1711865126
@@ -7828,13 +8150,25 @@ MonoBehaviour:
       - m_Target: {fileID: 108584587}
         m_TargetAssemblyTypeName: ChangeSceneButton, Assembly-CSharp
         m_MethodName: ChangeScene
-        m_Mode: 5
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
+          m_FloatArgument: 0
+          m_StringArgument: S3L2
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 108584589}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: ReproducirSonidoSelect
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: S3L2
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1725676791
@@ -8464,6 +8798,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 108584589}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: ReproducirSonidoBack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &2013741708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8588,13 +8934,25 @@ MonoBehaviour:
       - m_Target: {fileID: 108584587}
         m_TargetAssemblyTypeName: ChangeSceneButton, Assembly-CSharp
         m_MethodName: ChangeScene
-        m_Mode: 5
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Home
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 108584589}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: ReproducirSonidoBack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2040973941
@@ -8721,6 +9079,18 @@ MonoBehaviour:
       - m_Target: {fileID: 108584589}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: RestarGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 108584589}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: ReproducirSonidoSelect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8875,6 +9245,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 108584589}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: ReproducirSonidoBack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &2094478390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8999,6 +9381,18 @@ MonoBehaviour:
       - m_Target: {fileID: 108584589}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: NextGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 108584589}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: ReproducirSonidoChancletazo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
