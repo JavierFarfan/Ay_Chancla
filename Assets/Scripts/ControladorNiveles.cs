@@ -7,9 +7,9 @@ public class ControladorNiveles : MonoBehaviour
 {
     public static ControladorNiveles Instance;
     public Button[] buttonsLevels;
-    public int unlockLevels;
+    private int unlockLevels;
     public Button[] buttonsStage;
-    public int unlockStage;
+    private int unlockStage;
 
 
 
@@ -30,6 +30,8 @@ public class ControladorNiveles : MonoBehaviour
 
     void Start()
     {
+        unlockLevels = PlayerPrefs.GetInt("UnlockedLevels", 1);
+        unlockStage = PlayerPrefs.GetInt("UnlockedStage", 0);
         ReloadButtonLevel();
         ReloadButtonStage();
     }
@@ -58,20 +60,23 @@ public class ControladorNiveles : MonoBehaviour
         }
     }
 
-    private void ReloadButtonLevel()
+    public void ReloadButtonLevel()
     {
         int unlockedLevels = PlayerPrefs.GetInt("UnlockedLevels", 1);
         for (int i = 0; i < buttonsLevels.Length; i++)
         {
             buttonsLevels[i].interactable = i < unlockedLevels;
         }
+        Debug.Log(unlockedLevels + "levels ");
+
     }
-    private void ReloadButtonStage()
+    public void ReloadButtonStage()
     {
         int unlockedStages = PlayerPrefs.GetInt("UnlockedStages", 1);
         for (int i = 0; i < buttonsStage.Length; i++)
         {
             buttonsStage[i].interactable = i < unlockedStages;
         }
+        Debug.Log(unlockedStages + "Stages ");
     }
 }

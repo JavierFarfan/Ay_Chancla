@@ -31,6 +31,8 @@ public class ChangeSceneButton : MonoBehaviour
         {
             case 0:
                 AudioManager.Instance.PlayMusic("tittle");
+                ControladorNiveles.Instance.ReloadButtonLevel();
+                ControladorNiveles.Instance.ReloadButtonStage(); 
                 
                 break;
             case 1:

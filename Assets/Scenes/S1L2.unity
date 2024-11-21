@@ -4392,7 +4392,7 @@ PrefabInstance:
     - target: {fileID: 308977260867590064, guid: b4aa915af8385e945b3dfdb0f0718e80,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 91
+      value: 84
       objectReference: {fileID: 0}
     - target: {fileID: 308977260867590064, guid: b4aa915af8385e945b3dfdb0f0718e80,
         type: 3}
@@ -4416,6 +4416,26 @@ PrefabInstance:
 
         chocar amigo'
       objectReference: {fileID: 0}
+    - target: {fileID: 2153263567557295061, guid: b4aa915af8385e945b3dfdb0f0718e80,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 67
+      objectReference: {fileID: 0}
+    - target: {fileID: 2153263567557295061, guid: b4aa915af8385e945b3dfdb0f0718e80,
+        type: 3}
+      propertyPath: m_margin.x
+      value: 0.7362671
+      objectReference: {fileID: 0}
+    - target: {fileID: 2153263567557295061, guid: b4aa915af8385e945b3dfdb0f0718e80,
+        type: 3}
+      propertyPath: m_margin.z
+      value: 1.5798645
+      objectReference: {fileID: 0}
+    - target: {fileID: 2153263567557295061, guid: b4aa915af8385e945b3dfdb0f0718e80,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 67
+      objectReference: {fileID: 0}
     - target: {fileID: 3951451244037696622, guid: b4aa915af8385e945b3dfdb0f0718e80,
         type: 3}
       propertyPath: m_RootOrder
@@ -4424,12 +4444,12 @@ PrefabInstance:
     - target: {fileID: 3951451244037696622, guid: b4aa915af8385e945b3dfdb0f0718e80,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 19.326172
+      value: 19.29
       objectReference: {fileID: 0}
     - target: {fileID: 3951451244037696622, guid: b4aa915af8385e945b3dfdb0f0718e80,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.5674458
+      value: 3.38
       objectReference: {fileID: 0}
     - target: {fileID: 3951451244037696622, guid: b4aa915af8385e945b3dfdb0f0718e80,
         type: 3}
