@@ -9,6 +9,7 @@ TagManager:
   - Obstaculo_NoJump
   - Obstaculo_Jump
   - Bici
+  - NPC
   layers:
   - Default
   - TransparentFX

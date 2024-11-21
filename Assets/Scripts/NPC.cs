@@ -17,14 +17,14 @@ public class NPC : MonoBehaviour
     {
         anim.enabled = false;
 
-        Debug.Log("no me estoy animando");
+        Debug.Log("no me estoy animando"); 
     }
 
     private void OnBecameVisible()
     {
         anim.enabled = true;
         AudioManager.Instance.PlaySfx(sonido);
-        Debug.Log("me anime");
+        Debug.Log("me anime");    
     }
     // Update is called once per frame
     void Update()

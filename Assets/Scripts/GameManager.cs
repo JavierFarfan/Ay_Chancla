@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject panelWin;
     [SerializeField] private GameObject panelLose;
     [SerializeField] private GameObject panelHud;
+    [SerializeField] private GameObject obstaculos;
     public HUD hud;
 
     public int vidas = 3;
@@ -36,6 +37,7 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1.0f;
         Application.targetFrameRate = 60;
+        obstaculos = GameObject.Find("Obtaculos");
     }
 
     public void PerderVida()
@@ -114,15 +116,18 @@ public class GameManager : MonoBehaviour
     }
     public void PerderGame()
     {
+
         AudioManager.Instance.PlaySfx("JuanitoGameOver");
         AudioManager.Instance.PlaySfx("StingerLose");
+        obstaculos = GameObject.Find("Obtaculos");
 
         AudioManager.Instance.musicSource.Stop();
         //SceneManager.LoadScene("LoseScene");
         Time.timeScale = 0f;
         panelHud.SetActive(false);
         panelLose.SetActive(true);
-       
+        obstaculos.SetActive(false);
+        
         
     }
     public void GanarGame()
@@ -130,12 +135,13 @@ public class GameManager : MonoBehaviour
         AudioManager.Instance.PlaySfx("JuanitoVictory");
         AudioManager.Instance.PlaySfx("MariaEnd");
         AudioManager.Instance.PlaySfx("StingerWin");
+        obstaculos = GameObject.Find("Obtaculos");
         AudioManager.Instance.musicSource.Stop();
         //SceneManager.LoadScene("WinScene");
         Time.timeScale = 0f;
         panelHud.SetActive(false);
         panelWin.SetActive(true);
-
+        obstaculos.SetActive(false);
     }
 
     public void ReproducirSonidoBack()

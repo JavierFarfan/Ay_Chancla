@@ -27,9 +27,8 @@ public class EnemigoJump : MonoBehaviour
 
             //Sonidos SFX Stage2
             if (gameObject.name == "cono")
-            {
-                Debug.Log("Agregar sonido del cono");
-                //AudioManager.Instance.PlaySfx("");
+            {   
+                AudioManager.Instance.PlaySfx("cono");
             }
             if (gameObject.name == "casco")
             {
@@ -43,23 +42,26 @@ public class EnemigoJump : MonoBehaviour
             //Sonidos SFX Stage3
             if (gameObject.name == "helado")
             {
-                AudioManager.Instance.PlaySfx("caca");
+                AudioManager.Instance.PlaySfx("helado");
             }
             if (gameObject.name == "piedra")
-            {
-                Debug.Log("Agregar sonido de pierda");
-                //AudioManager.Instance.PlaySfx("");
+            {         
+                AudioManager.Instance.PlaySfx("rocas");
             }
             if (gameObject.name == "pelota")
+            {         
+                AudioManager.Instance.PlaySfx("pelota");
+            }
+            if (gameObject.name == "tacho")
             {
-                Debug.Log("Agregar sonido de pelota");
-                //AudioManager.Instance.PlaySfx("");
+                AudioManager.Instance.PlaySfx("cestoBasura");
+            }
+            if (gameObject.name == "perroJugeton")
+            {
+                AudioManager.Instance.PlaySfx("perroJugandoImpact");
             }
 
-
         }
-
-
     }
 
 }

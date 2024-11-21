@@ -111,6 +111,14 @@ public class JUANITO : MonoBehaviour
         }
     }
 
+    //public void runSFX()
+    //{
+    //    if(isJumping == false)
+    //    {
+    //        AudioManager.Instance.PlaySfx("",true,);
+    //    }
+    //}
+
     void MoveToLane()
     {
         targetPosition = new Vector3(transform.position.x, initialPosition.y - (carrilInicio * disCarriles), transform.position.z);
@@ -194,9 +202,22 @@ public class JUANITO : MonoBehaviour
             }
             if (collision.gameObject.name == "alcantarilla")
             {
-                AudioManager.Instance.PlaySfx("charco");
-                AudioManager.Instance.PlaySfx("casco");
+                AudioManager.Instance.PlaySfx("alcantarilla");
             }
+            if (collision.gameObject.name == "trabajador")
+            {
+                AudioManager.Instance.PlaySfx("trabajadorGritando");
+                AudioManager.Instance.PlaySfx("carretilla");
+            }
+            if (collision.gameObject.name == "mezcladora")
+            {
+                AudioManager.Instance.PlaySfx("camionConcretoImpact");
+            }
+            if (collision.gameObject.name == "tractor")
+            {
+                AudioManager.Instance.PlaySfx("tractorImpact");
+            }
+
 
             //Sonidos SFX Stage 3
 
@@ -206,38 +227,30 @@ public class JUANITO : MonoBehaviour
             }
             if (collision.gameObject.name == "camionHelado")
             {
-                AudioManager.Instance.PlaySfx("auto");
-                AudioManager.Instance.PlaySfx("caca");
+                AudioManager.Instance.PlaySfx("camionHeladoImpact");
             }
             if (collision.gameObject.name == "camionDonas")
             {
-                AudioManager.Instance.PlaySfx("auto");
-                AudioManager.Instance.PlaySfx("caca");
-            }
-            if (collision.gameObject.name == "tacho")
-            {
-                AudioManager.Instance.PlaySfx("casco");
+                AudioManager.Instance.PlaySfx("camionDonasImpact");
             }
             if (collision.gameObject.name == "abuela")
             {
-                Debug.Log("Agregar sonido de abuela");
-                //AudioManager.Instance.PlaySfx("");
+                AudioManager.Instance.PlaySfx("abuela1Impact");
             }
             if (collision.gameObject.name == "abuela2")
             {
-                Debug.Log("Agregar sonido de abuela 2");
-                //AudioManager.Instance.PlaySfx("");
+                AudioManager.Instance.PlaySfx("abuela2Impact");
             }
             if (collision.gameObject.name == "abuela3")
             {
-                Debug.Log("Agregar sonido de abuela 3");
-                //AudioManager.Instance.PlaySfx("");
+                AudioManager.Instance.PlaySfx("abuela3Impact");
             }
-            
-
+            if (collision.gameObject.name.StartsWith("Bici"))
+            {
+                AudioManager.Instance.PlaySfx("bicicleta");
+                AudioManager.Instance.PlaySfx("bicicletaGritando");
+            }
         }
-
-
     }
 
     // --- Métodos Públicos para los Botones en Canva ---

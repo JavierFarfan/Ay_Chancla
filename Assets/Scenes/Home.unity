@@ -4150,7 +4150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musicSounds:
-  - name: tittle
+  - name: title
     clip: {fileID: 8300000, guid: 8f20b2233cb804f4e99c3fcf5a6b29fc, type: 3}
   - name: Stage1
     clip: {fileID: 8300000, guid: 3e9208b92c8369d48a1ee54b207c79b3, type: 3}
@@ -4175,14 +4175,18 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 4928deb6f4c15aa4a88e56d5830787e7, type: 3}
   - name: auto
     clip: {fileID: 8300000, guid: dc93721fce095f04ba87a8e646e0a33d, type: 3}
+  - name: perro duerme
+    clip: {fileID: 8300000, guid: 720d1e46a503dd146939b9b734577fd0, type: 3}
   - name: perro ladra
-    clip: {fileID: 8300000, guid: bb01d4611227345409e71e8834e86d8d, type: 3}
+    clip: {fileID: 8300000, guid: 5e9aeb50e38ea2e4086d99a25d5f11f4, type: 3}
   - name: caca
     clip: {fileID: 8300000, guid: 87105b5812a25d540bf954b386a7381f, type: 3}
   - name: charco
     clip: {fileID: 8300000, guid: 4a5669ed61968ec498a10d2566e762b1, type: 3}
   - name: valla
     clip: {fileID: 8300000, guid: ddaca08643ea48b46b36baa5d2729af4, type: 3}
+  - name: cono
+    clip: {fileID: 8300000, guid: 4596803053196fe4fb0426f7c089140f, type: 3}
   - name: arena
     clip: {fileID: 8300000, guid: 5d47945ecde799e4a8882de61f2e4cf2, type: 3}
   - name: vigas
@@ -4190,19 +4194,69 @@ MonoBehaviour:
   - name: camionImpacto
     clip: {fileID: 8300000, guid: 17b50f009aa65d14a92208602571d719, type: 3}
   - name: carretilla
-    clip: {fileID: 8300000, guid: dc93721fce095f04ba87a8e646e0a33d, type: 3}
-  - name: casco
-    clip: {fileID: 8300000, guid: 3a5f91150e7c7c842b3e504c56250e3d, type: 3}
-  - name: perro duerme
-    clip: {fileID: 8300000, guid: 720d1e46a503dd146939b9b734577fd0, type: 3}
-  - name: bicicleta
-    clip: {fileID: 8300000, guid: 7fe0717ff47ccf24987ec1c570d522ef, type: 3}
+    clip: {fileID: 8300000, guid: 6baf6b555f1ffd24db57da2ede2a15bc, type: 3}
+  - name: alcantarilla
+    clip: {fileID: 8300000, guid: 46275e82d108a1f4897c3e929f002f8a, type: 3}
+  - name: trabajadorGritando
+    clip: {fileID: 8300000, guid: 9809b9911eec15c40a9809703ab2d443, type: 3}
+  - name: camionConcretoMotor
+    clip: {fileID: 8300000, guid: 76c5e6ab27105f141ac824f09a225509, type: 3}
+  - name: camionConcretoImpact
+    clip: {fileID: 8300000, guid: 1176b40b71ae5674cb732da566669a67, type: 3}
+  - name: camionConcretoBocina
+    clip: {fileID: 8300000, guid: 7ceeae39f1e80f7459d0fd1e46a1aca6, type: 3}
+  - name: tractorBocina
+    clip: {fileID: 8300000, guid: 993a58a71efa35048a62b14b52297029, type: 3}
+  - name: tractorMotor
+    clip: {fileID: 8300000, guid: 3743524d42a973649a9f8c0bcbd5f651, type: 3}
+  - name: herramientas
+    clip: {fileID: 8300000, guid: e0612126d07fc0e4397fa5c481915192, type: 3}
+  - name: tractorImpact
+    clip: {fileID: 8300000, guid: c1cfcd9838e099b488151773a2d962fc, type: 3}
   - name: camionMove
     clip: {fileID: 8300000, guid: 2a5901e69ae39554984ee28229beb5ea, type: 3}
   - name: bancoParque
     clip: {fileID: 8300000, guid: 74161b6d3d20e694195a57a1ebe12b19, type: 3}
+  - name: pelota
+    clip: {fileID: 8300000, guid: 53230e99ad01c7548952fa1a8c005f16, type: 3}
+  - name: perroJugando
+    clip: {fileID: 8300000, guid: f4a0169717892ba4abce4ac41dcf0e0a, type: 3}
+  - name: perroJugandoImpact
+    clip: {fileID: 8300000, guid: a9dbb5ec9b9ef094d9f3187f61abcd4a, type: 3}
+  - name: rocas
+    clip: {fileID: 8300000, guid: 770d17b1f41839c43b76bf75981a535a, type: 3}
+  - name: cestoBasura
+    clip: {fileID: 8300000, guid: b21c5a813c5da1140b25a6820a644dda, type: 3}
+  - name: camionHeladosIdle
+    clip: {fileID: 8300000, guid: 403b64009e9f4284d87462bd1ed77f25, type: 3}
+  - name: camionHeladosImpact
+    clip: {fileID: 8300000, guid: 3e74f1c0dad6fe744b204bf6ec6a7020, type: 3}
+  - name: helado
+    clip: {fileID: 8300000, guid: 43799fd3fe8df5d43bc7f66badaac0b0, type: 3}
+  - name: camionDonasIdle
+    clip: {fileID: 8300000, guid: 6e7542188d6148c48a22dfd9c51f6c51, type: 3}
+  - name: camionDonasImpact
+    clip: {fileID: 8300000, guid: 65396e8c968f3ad4091305c1abafe7b2, type: 3}
+  - name: bicicletaAndando
+    clip: {fileID: 8300000, guid: 2fb9467b5e2d7884e9ce1c8aa894247c, type: 3}
+  - name: campanaBicicleta
+    clip: {fileID: 8300000, guid: a4c3472d68442b64b84fb83dfd6ce401, type: 3}
   - name: bicicleta
     clip: {fileID: 8300000, guid: 7fe0717ff47ccf24987ec1c570d522ef, type: 3}
+  - name: bicicletaGritando
+    clip: {fileID: 8300000, guid: bdd17214453858847b8be857d89a1153, type: 3}
+  - name: anciana1Idle
+    clip: {fileID: 8300000, guid: 656bfcad2a205724f9bc55662ae8f6c9, type: 3}
+  - name: anciana1Impact
+    clip: {fileID: 8300000, guid: 0232d63850faf974d859a5533631bce1, type: 3}
+  - name: anciana2Idle
+    clip: {fileID: 8300000, guid: 30aa7347f7f1e894d9b09d16a72f16a9, type: 3}
+  - name: anciana2Impact
+    clip: {fileID: 8300000, guid: e581f48b1f786484cbe5c1719c1ee6af, type: 3}
+  - name: anciana3Idle
+    clip: {fileID: 8300000, guid: ceba06c4ab298364888b680a0e2c4499, type: 3}
+  - name: anciana3Impact
+    clip: {fileID: 8300000, guid: 4250553af6fb4ec498e9d5a4a9488748, type: 3}
   - name: sfxUIChancletazo
     clip: {fileID: 8300000, guid: 2f5439082f700b7469458625b76260fd, type: 3}
   - name: sfxUIBack
@@ -5777,7 +5831,7 @@ MonoBehaviour:
   m_FillRect: {fileID: 1463642983}
   m_HandleRect: {fileID: 262964233}
   m_Direction: 0
-  m_MinValue: 0.0001
+  m_MinValue: 0.00001
   m_MaxValue: 1
   m_WholeNumbers: 0
   m_Value: 0.0001
@@ -6484,13 +6538,11 @@ MonoBehaviour:
   - {fileID: 1725676790}
   - {fileID: 1266893510}
   - {fileID: 729115692}
-  unlockLevels: 1
   buttonsStage:
   - {fileID: 196060328}
   - {fileID: 1674866525}
   - {fileID: 664712107}
   - {fileID: 349520681}
-  unlockStage: 1
 --- !u!4 &1499834273
 Transform:
   m_ObjectHideFlags: 0
@@ -7859,7 +7911,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 7064907321239150019, guid: b5038e1b24ed6f74990e38a6c4f6ebfb,
     type: 2}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 8f20b2233cb804f4e99c3fcf5a6b29fc, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -8045,7 +8097,7 @@ MonoBehaviour:
   m_FillRect: {fileID: 476628674}
   m_HandleRect: {fileID: 602368322}
   m_Direction: 0
-  m_MinValue: 0.0001
+  m_MinValue: 0.00001
   m_MaxValue: 1
   m_WholeNumbers: 0
   m_Value: 0.0001

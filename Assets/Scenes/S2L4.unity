@@ -6424,6 +6424,7 @@ MonoBehaviour:
   panelWin: {fileID: 0}
   panelLose: {fileID: 0}
   panelHud: {fileID: 0}
+  obstaculos: {fileID: 0}
   hud: {fileID: 0}
   vidas: 3
   hudController: {fileID: 0}
