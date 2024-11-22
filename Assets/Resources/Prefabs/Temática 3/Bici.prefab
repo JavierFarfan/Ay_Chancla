@@ -160,7 +160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 330edb75923e2054090d3e3c2abb723b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volumen: 1
+  volumen: 0.2
   isLoopable: 0
   delayTime: 0.1
   clipName: campanaBicicleta
@@ -177,7 +177,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: a4c3472d68442b64b84fb83dfd6ce401, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0

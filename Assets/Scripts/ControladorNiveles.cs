@@ -31,9 +31,7 @@ public class ControladorNiveles : MonoBehaviour
     void Start()
     {
         unlockLevels = PlayerPrefs.GetInt("UnlockedLevels", 1);
-        unlockStage = PlayerPrefs.GetInt("UnlockedStage", 0);
-        ReloadButtonLevel();
-        ReloadButtonStage();
+        unlockStage = PlayerPrefs.GetInt("UnlockedStages", 1);
     }
 
     public void IncreaseLevel( int levelUnlocked)
@@ -44,8 +42,6 @@ public class ControladorNiveles : MonoBehaviour
          
             PlayerPrefs.SetInt("UnlockedLevels", unlockLevels);
             PlayerPrefs.Save();
-            ReloadButtonLevel();        
-
         }        
     }
 
@@ -55,28 +51,24 @@ public class ControladorNiveles : MonoBehaviour
         {
             unlockStage = stageUnlocked;
             PlayerPrefs.SetInt("UnlockedStages", unlockStage);
-            PlayerPrefs.Save();
-            ReloadButtonStage();
+            PlayerPrefs.Save();        
         }
     }
 
     public void ReloadButtonLevel()
     {
-        int unlockedLevels = PlayerPrefs.GetInt("UnlockedLevels", 1);
+        int unlockedLevels = PlayerPrefs.GetInt("UnlockedLevels");
         for (int i = 0; i < buttonsLevels.Length; i++)
         {
             buttonsLevels[i].interactable = i < unlockedLevels;
         }
-        Debug.Log(unlockedLevels + "levels ");
-
     }
     public void ReloadButtonStage()
     {
-        int unlockedStages = PlayerPrefs.GetInt("UnlockedStages", 1);
+        int unlockedStages = PlayerPrefs.GetInt("UnlockedStages");
         for (int i = 0; i < buttonsStage.Length; i++)
         {
             buttonsStage[i].interactable = i < unlockedStages;
         }
-        Debug.Log(unlockedStages + "Stages ");
     }
 }

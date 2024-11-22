@@ -98,6 +98,7 @@ public class JUANITO : MonoBehaviour
     {
         carrilInicio += direction;
         MoveToLane();
+        AudioManager.Instance.PlaySfx("JuanitoCambiandoCarril");
     }
 
     public void StartJump()
@@ -108,6 +109,7 @@ public class JUANITO : MonoBehaviour
             jumpStartTime = Time.time;
             isJumping = true;
             animator.SetBool("enSuelo", true);
+            AudioManager.Instance.PlaySfx("JuanitoSaltando");
         }
     }
 
@@ -190,7 +192,7 @@ public class JUANITO : MonoBehaviour
             //Sonidos SFX Stage 2
             if (collision.gameObject.name == "arena")
             {
-                AudioManager.Instance.PlaySfx("arena");
+                AudioManager.Instance.PlaySfx("arena", 0.8f);
             }
             if (collision.gameObject.name == "camion")
             {
@@ -202,20 +204,20 @@ public class JUANITO : MonoBehaviour
             }
             if (collision.gameObject.name == "alcantarilla")
             {
-                AudioManager.Instance.PlaySfx("alcantarilla");
+                AudioManager.Instance.PlaySfx("alcantarilla", 1.3f);
             }
-            if (collision.gameObject.name == "trabajador")
+            if (collision.gameObject.name == "obrero con carretilla")
             {
-                AudioManager.Instance.PlaySfx("trabajadorGritando");
+                AudioManager.Instance.PlaySfx("trabajadorGritando", false, 2f, 0.3f);
                 AudioManager.Instance.PlaySfx("carretilla");
             }
             if (collision.gameObject.name == "mezcladora")
             {
-                AudioManager.Instance.PlaySfx("camionConcretoImpact");
+                AudioManager.Instance.PlaySfx("camionConcretoImpact", 1.5f);
             }
             if (collision.gameObject.name == "tractor")
             {
-                AudioManager.Instance.PlaySfx("tractorImpact");
+                AudioManager.Instance.PlaySfx("tractorImpact", 1.5f);
             }
 
 
@@ -223,11 +225,11 @@ public class JUANITO : MonoBehaviour
 
             if (collision.gameObject.name == "banca")
             {
-                AudioManager.Instance.PlaySfx("bancoParque");
+                AudioManager.Instance.PlaySfx("bancoParque", 1.5f);
             }
-            if (collision.gameObject.name == "camionHelado")
+            if (collision.gameObject.name == "camionHelados")
             {
-                AudioManager.Instance.PlaySfx("camionHeladoImpact");
+                AudioManager.Instance.PlaySfx("camionHeladosImpact");
             }
             if (collision.gameObject.name == "camionDonas")
             {
@@ -248,7 +250,7 @@ public class JUANITO : MonoBehaviour
             if (collision.gameObject.name.StartsWith("Bici"))
             {
                 AudioManager.Instance.PlaySfx("bicicleta");
-                AudioManager.Instance.PlaySfx("bicicletaGritando");
+                AudioManager.Instance.PlaySfx("bicicletaGritando", 2f);
             }
         }
     }

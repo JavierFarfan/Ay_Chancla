@@ -145,7 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 330edb75923e2054090d3e3c2abb723b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volumen: 1
+  volumen: 0.7
   isLoopable: 1
   delayTime: 0
   clipName: tractorMotor
@@ -162,9 +162,9 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 3743524d42a973649a9f8c0bcbd5f651, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.7
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

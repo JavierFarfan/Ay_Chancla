@@ -51,7 +51,6 @@ public class sfxController : MonoBehaviour
 
     private void OnBecameInvisible()
     {
-
         audioSource.Stop();
     }
 
@@ -65,5 +64,27 @@ public class sfxController : MonoBehaviour
         {
             audioSource.Play();
         }
+    }
+
+    private void OnEnable()
+    {
+        GameManager.Instance.OnPauseGame += GamePaused;
+        GameManager.Instance.OnResumeGame += GameUnPaused;
+    }
+
+    private void OnDisable()
+    {
+        GameManager.Instance.OnPauseGame -= GamePaused;
+        GameManager.Instance.OnResumeGame -= GameUnPaused;
+    }
+
+    private void GamePaused()
+    {
+        audioSource.Pause();
+    }
+
+    private void GameUnPaused()
+    {
+        audioSource.UnPause();
     }
 }

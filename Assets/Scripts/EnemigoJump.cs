@@ -14,25 +14,25 @@ public class EnemigoJump : MonoBehaviour
             //Sonidos SFX Stage1
             if (gameObject.name == "charco") 
             {
-                AudioManager.Instance.PlaySfx("charco");
+                AudioManager.Instance.PlaySfx("charco", 1.3f);
             }
             if (gameObject.name == "popo")
             {
-                AudioManager.Instance.PlaySfx("caca");
+                AudioManager.Instance.PlaySfx("caca", 1.5f);
             }
             if (gameObject.name == "perro")
             {
-                AudioManager.Instance.PlaySfx("perro ladra");
+                AudioManager.Instance.PlaySfx("perro ladra", 1.3f);
             }
 
             //Sonidos SFX Stage2
             if (gameObject.name == "cono")
             {   
-                AudioManager.Instance.PlaySfx("cono");
+                AudioManager.Instance.PlaySfx("cono", 1.5f);
             }
             if (gameObject.name == "casco")
             {
-                AudioManager.Instance.PlaySfx("casco");
+                AudioManager.Instance.PlaySfx("herramientas");
             }
             if (gameObject.name == "carretilla")
             {
@@ -42,23 +42,23 @@ public class EnemigoJump : MonoBehaviour
             //Sonidos SFX Stage3
             if (gameObject.name == "helado")
             {
-                AudioManager.Instance.PlaySfx("helado");
+                AudioManager.Instance.PlaySfx("helado", 1.5f);
             }
-            if (gameObject.name == "piedra")
+            if (gameObject.name == "rocas")
             {         
-                AudioManager.Instance.PlaySfx("rocas");
+                AudioManager.Instance.PlaySfx("rocas", 1.5f);
             }
             if (gameObject.name == "pelota")
             {         
-                AudioManager.Instance.PlaySfx("pelota");
+                AudioManager.Instance.PlaySfx("pelota", 1.2f);
             }
-            if (gameObject.name == "tacho")
+            if (gameObject.name == "basurero")
             {
-                AudioManager.Instance.PlaySfx("cestoBasura");
+                AudioManager.Instance.PlaySfx("cestoBasura", 1.2f);
             }
-            if (gameObject.name == "perroJugeton")
+            if (gameObject.name == "perroJugueton")
             {
-                AudioManager.Instance.PlaySfx("perroJugandoImpact");
+                AudioManager.Instance.PlaySfx("perroJugandoImpact", 1.5f);
             }
 
         }

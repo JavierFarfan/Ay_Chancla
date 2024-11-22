@@ -145,7 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 330edb75923e2054090d3e3c2abb723b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volumen: 1
+  volumen: 0.5
   isLoopable: 1
   delayTime: 0
   clipName: camionConcretoMotor
@@ -162,7 +162,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 76c5e6ab27105f141ac824f09a225509, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
