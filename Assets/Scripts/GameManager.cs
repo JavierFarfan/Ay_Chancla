@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 using Unity.VisualScripting;
+using System;
 
 public class GameManager : MonoBehaviour
 {
@@ -18,6 +19,10 @@ public class GameManager : MonoBehaviour
     public int vidas = 3;
 
     public HUDController hudController;
+
+    public event Action OnPauseGame;
+    public event Action OnResumeGame;
+
 
     private void Awake()
     {
@@ -69,12 +74,18 @@ public class GameManager : MonoBehaviour
     }
     public void PauseGame()
     {
+        OnPauseGame?.Invoke();
         AudioManager.Instance.PlaySfx("sfxUISelect");
+        AudioManager.Instance.musicSource.Pause();
+        GameObject.Find("Maria").GetComponent<AudioSource>().Pause();
         Time.timeScale = 0f;
     }
     public void ResumeGame()
     {
+        OnResumeGame?.Invoke();
         AudioManager.Instance.PlaySfx("sfxUISelect");
+        AudioManager.Instance.musicSource.UnPause();
+        GameObject.Find("Maria").GetComponent<AudioSource>().UnPause();
         Time.timeScale = 1f;
     }
     public void NextGame()
@@ -90,7 +101,6 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("Esta es la ultima escena");
         }
-        
     }
 
     public void RestarGame()
@@ -116,8 +126,8 @@ public class GameManager : MonoBehaviour
     }
     public void PerderGame()
     {
-
-        AudioManager.Instance.PlaySfx("JuanitoGameOver");
+        GameObject.Find("Maria").GetComponent<AudioSource>().Stop();
+        AudioManager.Instance.PlaySfx("JuanitoGameOver", 1.2f);
         AudioManager.Instance.PlaySfx("StingerLose");
         obstaculos = GameObject.Find("Obtaculos");
 
@@ -132,8 +142,9 @@ public class GameManager : MonoBehaviour
     }
     public void GanarGame()
     {
-        AudioManager.Instance.PlaySfx("JuanitoVictory");
-        AudioManager.Instance.PlaySfx("MariaEnd");
+        GameObject.Find("Maria").GetComponent<AudioSource>().Stop();
+        AudioManager.Instance.PlaySfx("JuanitoVictory", 1.2f);
+        AudioManager.Instance.PlaySfx("MariaEnd", 1.2f);
         AudioManager.Instance.PlaySfx("StingerWin");
         obstaculos = GameObject.Find("Obtaculos");
         AudioManager.Instance.musicSource.Stop();
@@ -154,7 +165,7 @@ public class GameManager : MonoBehaviour
     }
     public void ReproducirSonidoChancletazo()
     {
-        AudioManager.Instance.PlaySfx("sfxUIChancletazo");
+        AudioManager.Instance.PlaySfx("sfxUIChancletazo", 1.5f);
     }
 
 }

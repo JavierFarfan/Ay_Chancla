@@ -30,10 +30,9 @@ public class ChangeSceneButton : MonoBehaviour
         switch (sceneIndex)
         {
             case 0:
-                AudioManager.Instance.PlayMusic("tittle");
+                AudioManager.Instance.PlayMusic("title");
                 ControladorNiveles.Instance.ReloadButtonLevel();
-                ControladorNiveles.Instance.ReloadButtonStage(); 
-                
+                ControladorNiveles.Instance.ReloadButtonStage();    
                 break;
             case 1:
             case 2:
@@ -41,7 +40,7 @@ public class ChangeSceneButton : MonoBehaviour
             case 4:
                 AudioManager.Instance.PlayMusic("Stage1");
                 AudioManager.Instance.PlaySfx("JuanitoStart");
-                AudioManager.Instance.PlaySfx("MariaStart");
+                AudioManager.Instance.PlaySfx("MariaStart", 1.4f);
                 break;
             case 5:
             case 6:
@@ -49,7 +48,7 @@ public class ChangeSceneButton : MonoBehaviour
             case 8:
                 AudioManager.Instance.PlayMusic("Stage2");
                 AudioManager.Instance.PlaySfx("JuanitoStart");
-                AudioManager.Instance.PlaySfx("MariaStart");
+                AudioManager.Instance.PlaySfx("MariaStart", 1.4f);
                 break;
             case 9:
             case 10:
@@ -57,15 +56,10 @@ public class ChangeSceneButton : MonoBehaviour
             case 12:
                 AudioManager.Instance.PlayMusic("Stage3");
                 AudioManager.Instance.PlaySfx("JuanitoStart");
-                AudioManager.Instance.PlaySfx("MariaStart");
+                AudioManager.Instance.PlaySfx("MariaStart", 1.4f);
                 break;
-
-
-
         }        
     }
-
-
 
     public void Exit()
     {
